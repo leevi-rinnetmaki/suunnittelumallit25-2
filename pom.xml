@@ -16,7 +16,6 @@
         <module>visitor2</module>
         <module>bridge</module>
         <module>flyweight</module>
-        <module>flyweight2</module>
     </modules>
 
     <properties>
