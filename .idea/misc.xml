@@ -11,6 +11,7 @@
       <set>
         <option value="$PROJECT_DIR$/Test1/pom.xml" />
         <option value="$PROJECT_DIR$/Test2/pom.xml" />
+        <option value="$PROJECT_DIR$/flyweight2/pom.xml" />
       </set>
     </option>
   </component>
