@@ -1,16 +1,20 @@
 package command;
 
+import receiver.BooleanPixelGrid;
 import receiver.CursorLocation;
+import receiver.GenerateCodeReceiver;
 
 public class GenerateCodeCommand implements Command {
     @Override
     public void execute() {
-
+        generateCodeReceiver.generateCode(booleanPixelGrid);
     }
 
-    CursorLocation cursorLocation;
+    GenerateCodeReceiver generateCodeReceiver;
+    BooleanPixelGrid booleanPixelGrid;
 
-    public GenerateCodeCommand(CursorLocation cursorLocation) {
-        this.cursorLocation = cursorLocation;
+    public GenerateCodeCommand(GenerateCodeReceiver generateCodeReceiver, BooleanPixelGrid booleanPixelGrid) {
+        this.generateCodeReceiver = generateCodeReceiver;
+        this.booleanPixelGrid = booleanPixelGrid;
     }
 }
